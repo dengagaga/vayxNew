@@ -118,6 +118,7 @@ body {
     font-family: "Inter", sans-serif;
     color: var(--main-color);
     overflow-x: hidden;
+    width: 100vw;
 }
 /* ______/BASE______ */
 
@@ -1845,12 +1846,14 @@ b {
     border-radius: 4px;
     text-align: left;
     gap: 16px;
+
     transition: all 0.3s;
     color: #161617;
 }
 .slider_index-right-item:active img{
     transform: scale(1.05);
 }
+
 .slider_index-right-item--active {
     background-color: #030504E5;
     transition: all 0.3s;
@@ -1858,6 +1861,51 @@ b {
     position: relative;
     box-shadow: 0px 1.66px 4.04px -1.9px #00000033;
     border-radius: 4px;
+}
+.slider_index-right-item:nth-child(1).slider_index-right-item--active {
+    position: relative;
+    background:url(../img/hus1.jpg) no-repeat center center/cover;
+}
+.slider_index-right-item:nth-child(1).slider_index-right-item--active::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #030504E5;
+    height: 100%;
+    height: 100%;
+}
+.slider_index-right-item:nth-child(2).slider_index-right-item--active {
+    position: relative;
+    background:url(../img/hus2.jpg) no-repeat center center/cover;
+}
+.slider_index-right-item:nth-child(2).slider_index-right-item--active::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #030504E5;
+    height: 100%;
+    height: 100%;
+}
+.slider_index-right-item:nth-child(3).slider_index-right-item--active {
+    position: relative;
+    background:url(../img/hus1.jpg) no-repeat center center/cover;
+}
+.slider_index-right-item:nth-child(3).slider_index-right-item--active::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #030504E5;
+    height: 100%;
+    height: 100%;
 }
 .slider_index-right-item--active::after {
     content: '';
@@ -1944,7 +1992,9 @@ b {
 .news-all_mobil {
     display: none;
 }
-
+.slider_index-mobil {
+    display: none;
+}
 
 @media(max-width:1440px) {
     .slider_index-all {
