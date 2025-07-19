@@ -11,6 +11,7 @@ btnAdd.addEventListener('click', () => {
 fon.addEventListener('mouseleave', function() {
     fon.classList.remove('nav_add-fon--active');
 });
+
 const sliderItems = document.querySelectorAll('.slider_index-right-item');
 let currentIndex = 0;
 let intervalId;
