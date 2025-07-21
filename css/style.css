@@ -991,7 +991,7 @@ b {
     .footer-add_list h5 {
         font-size: 21px;
         font-weight: 500;
-        margin-bottom: 14px;
+        margin-bottom: 30px;
     }
     .footer-add_list-profil-left {
         display: flex;
@@ -1001,11 +1001,11 @@ b {
     .footer-add_list-profil {
         display: flex;
         padding: 9px 13px;
-        background: #F2F3F5;
+        background: #F6F7FB;
         border-radius: 8px;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 14px;
+        margin-bottom: 30px;
         cursor: pointer;
     }
     .footer-add_list-profil h6 {
@@ -1026,21 +1026,24 @@ b {
     }
     .footer-add_list-links {
         display: flex;
-        flex-direction: column;
-        gap: 20px;
+        /* flex-direction: column; */
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 29px;
         border-bottom: 1px solid #F2F3F5;
         padding-bottom: 16px;
     }
     .footer-add_list-bot {
-        margin-top: 20px;
+        margin-top: 30px;
         display: flex;
+        flex-direction: column;
         gap: 12px;
-        align-items: center;
+        
     }
     .footer-add_list-bot h6{
         font-size: 14px;
         font-weight: 500;
-        text-transform: uppercase;
+        text-transform: ;
         margin-bottom: 4px;
     }
     .footer-add_list-bot p{
@@ -1051,6 +1054,8 @@ b {
         font-size: 14px;
         color: #000;
         display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         gap: 12px;
         align-items: center;
     }
@@ -1066,13 +1071,13 @@ b {
     .footer-add_list {
         background-color: #fff;
         position: fixed;
-        top: 0;
         display: block;
         bottom: 64px;
-        height:100%;
+        height:70%;
         left: 0;
+        border-radius: 4px 4px 0px 0px;
         z-index: 9999;
-        padding: 20px 16px;
+        padding: 24px 16px;
         right: 0;
         transition: all .3s;
     }
@@ -1228,6 +1233,9 @@ b {
 }
 .header-rigth_modal-2 {
     display: none!important;
+}
+.footer-add_list-link--fw {
+    font-weight: 700;
 }
 }
 @media(max-width:500px) {
@@ -1729,7 +1737,7 @@ b {
 }
 .body-scrollNone {
     position:relative;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 
@@ -2117,6 +2125,16 @@ b {
     right: 0;
     height: 100vh;
 }
+.newsItem_fon-fixed::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    border-radius: 4px;
+    left: 0;
+    top: 408px;
+    background: url(../img/pix.png);
+    height: 6px;
+}
 .newsItem_fon-fixed-all {
     padding-left: 125px;
     padding-right: 80px;
@@ -2305,6 +2323,7 @@ b {
         height: 306px;
         max-width: 580px;
     }
+    
     .newsItem_fon-left_line-link {
         font-size: 20px;
         margin-bottom: 40px;
@@ -2395,6 +2414,9 @@ b {
         height: 272px;
         max-width: 440px;
     }
+    .newsItem_fon-fixed::after {
+    top: 272px;
+}
         .newsItem_fon-left_title {
         font-size: 32px;
         margin-bottom: 60px;
@@ -2625,8 +2647,8 @@ b {
     .news_index {
         padding-bottom: 80px;
     }
-   .news_index-all-item-img {
-    
+    .news_index-all-item-img {
+        
         height: 188px;
     }
     .news_index-all {
@@ -2635,9 +2657,18 @@ b {
     .newsItem_fon-left {
         padding-right: 0;
         padding-left: 0;
+    }
+    .newsItem_fon-left_link, .newsItem_fon-left_title, .newsItem_fon-left_text-3, .newsItem_fon-left_text, .newsItem_fon-left_line, .newsItem_fon-left_line-link, .newsItem_fon-left_text-end {
+        padding-right: 13px;
+        padding-left: 13px;
+    }
 }
-.newsItem_fon-left_link, .newsItem_fon-left_title, .newsItem_fon-left_text-3, .newsItem_fon-left_text, .newsItem_fon-left_line, .newsItem_fon-left_line-link, .newsItem_fon-left_text-end {
-    padding-right: 13px;
-    padding-left: 13px;
+@media(max-width:405px) {
+.footer-add_list-links {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.footer-add_list-link {
+    
 }
 }
