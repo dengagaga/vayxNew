@@ -1971,6 +1971,7 @@ b {
 .news-all-item {
     max-width: 536px;
     position: relative;
+    
 }
 .news-all-item-date {
     position: absolute;
@@ -1993,6 +1994,11 @@ b {
     font-weight: 500px;
     font-family: 'DIN Pro';
     margin-top: 16px;
+    border-bottom: 1px solid #EFEFEF!important;
+    padding-bottom: 16px;
+}
+.newsItem_fon-fixed--mobile {
+    display: none;
 }
 /* ______/NEW Index______ */
 
@@ -2321,6 +2327,10 @@ b {
     .newsItem_fon-fixed-line {
         gap: 20px;
     }
+    .newsItem_news {
+        padding-right: 60px;
+        padding-left: 60px;
+    }
 }
 @media(max-width:1024px) {
     .main-index {
@@ -2371,6 +2381,58 @@ b {
     .slider_index-home-text {
         font-size: 12px;
     }
+    .newsItem-index {
+        padding-right: 0;
+        padding-left: 84px;
+    }
+    .newsItem_fon-left {
+        margin-top: 35px;
+        padding: 24px 20px;
+        margin-right: -25px;
+        padding-bottom: 30px;
+    }
+        .newsItem_fon-fixed-img {
+        height: 272px;
+        max-width: 440px;
+    }
+        .newsItem_fon-left_title {
+        font-size: 32px;
+        margin-bottom: 60px;
+    }
+        .newsItem_fon-left_text-3 {
+        font-size: 22px;
+        margin-bottom: 60px;
+    }
+        .newsItem_fon-left_text {
+        font-size: 18px;
+        
+    }
+    
+    .newsItem_fon-left_line-link {
+        font-size: 18px;
+    }
+    .newsItem_fon-left_line-img {
+        width: 47%;
+}
+.news-all-item-imgOne {
+        width: 30%;
+    }
+    .newsItem_fon-fixed-all {
+        padding-left: 70px;
+    }
+    .newsItem_fon-fixed-texts-title {
+        font-size: 14px;
+    }
+        .newsItem_fon-fixed-texts-text {
+        font-size: 13px;
+    }
+    .newsItem_fon-fixed-img {
+        margin-bottom: 40px;
+    }
+    .newsItem_news {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
 }
 @media(max-width:768px) {
     .main-index {
@@ -2408,6 +2470,7 @@ b {
     }
     .swiperIndexMobil {
         padding-top: 10px!important;
+        padding-bottom: 10px!important;
     }
     .news_title {
         margin-bottom: 18px;
@@ -2484,6 +2547,79 @@ b {
         text-align: left;
         color: white;
     }
+
+    .newsItem_fon-fixed {
+        display: none;
+    }
+    .newsItem_fon-left {
+        padding: 34px 13px;
+        margin-top: 0;
+        margin-right: 0;
+    }
+    .newsItem_fon-left_link {
+        margin-bottom: 24px;
+    }
+    .newsItem_fon-left_title {
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+    .newsItem_fon-left_text-3 {
+        margin-bottom: 40px;
+    }
+    .newsItem_fon-left_text {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+    .newsItem_fon-left_line {
+        gap: 12px;
+    }
+    .newsItem_fon-left_line-link {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+    .newsItem_fon-left_text-end {
+        margin-bottom: 0;
+    }
+    .newsItem_news {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .newsItem-index {
+        padding-top: 0;
+    }
+    
+    .newsItem_fon-left_line-img {
+        width: 48%;
+    }
+    .news-all-item-imgOne {
+        width: 31%;
+    }
+    .newsItem_fon-fixed--mobile {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        background:url(../img/newItemFon.png) no-repeat center center/cover;
+        margin-bottom: 40px;
+}
+.newsItem_fon-fixed--mobile::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    border-radius: 4px;
+    left: 0;
+    bottom: 0;
+    background: url(../img/pix.png);
+    height: 6px;
+}
+.newsItem_fon-fixed-all {
+    padding-right: 24px;
+    padding-left: 24px;
+    padding-bottom: 10px;
+}
+.newsItem_fon-fixed-texts-text {
+    font-size: 14px;
+}
+
 }
 @media(max-width:450px) {
     .news_index {
@@ -2496,4 +2632,12 @@ b {
     .news_index-all {
         gap: 36px;
     }
+    .newsItem_fon-left {
+        padding-right: 0;
+        padding-left: 0;
+}
+.newsItem_fon-left_link, .newsItem_fon-left_title, .newsItem_fon-left_text-3, .newsItem_fon-left_text, .newsItem_fon-left_line, .newsItem_fon-left_line-link, .newsItem_fon-left_text-end {
+    padding-right: 13px;
+    padding-left: 13px;
+}
 }
