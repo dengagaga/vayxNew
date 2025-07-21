@@ -12,4 +12,5 @@ window.addEventListener('load', function () {
     footerAddList.classList.toggle('footerAddList-none')
     body.classList.toggle('body-scrollNone')
     colorEdit.classList.toggle('colorEdit')
+    footerMenuLinkBl.classList.toggle('footerMenuLinkBl--active')
   }

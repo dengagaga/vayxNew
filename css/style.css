@@ -978,6 +978,7 @@ b {
     .footer-menu_link {
         padding: 4x 8px;
         display: flex;
+        min-width: 50px;
         flex-direction: column;
         font-size: 12px;
         color: #23273099!important;
@@ -1018,12 +1019,9 @@ b {
     .footer-menu_link-bl {
         color: #000;
         cursor: pointer;
+        
     }
-    .footerAddList-none {
-        transition: all .3s;
-        opacity: 0;
-        visibility: hidden;
-    }
+    
     .footer-add_list-links {
         display: flex;
         /* flex-direction: column; */
@@ -1043,7 +1041,7 @@ b {
     .footer-add_list-bot h6{
         font-size: 14px;
         font-weight: 500;
-        text-transform: ;
+        
         margin-bottom: 4px;
     }
     .footer-add_list-bot p{
@@ -1069,18 +1067,40 @@ b {
         stroke: #0050FF;
     }
     .footer-add_list {
-        background-color: #fff;
-        position: fixed;
-        display: block;
-        bottom: 64px;
-        height:70%;
-        left: 0;
-        border-radius: 4px 4px 0px 0px;
-        z-index: 9999;
-        padding: 24px 16px;
-        right: 0;
-        transition: all .3s;
-    }
+    background-color: #fff;
+    position: fixed;
+    display: block;
+    bottom: 64px;
+    height: 70%;
+    box-shadow: 0px -4px 30px 0px rgba(0, 0, 0, 0.2);
+    left: 0;
+    border-radius: 4px 4px 0 0;
+    z-index: 9999;
+    padding: 24px 16px;
+    right: 0;
+    transition: all 0.4s cubic-bezier(0.25, 0.1, 0.25, 1); /* Более плавная easing-функция */
+    transform: translateY(0); /* Используем transform для анимации */
+    opacity: 1;
+    visibility: visible;
+}
+
+.footerAddList-none {
+    position: fixed;
+    transition: all 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+    opacity: 0;
+    transform: translateY(100%); /* Анимируем сдвиг вниз вместо изменения bottom */
+    visibility: hidden;
+    /* Остальные свойства как в .footer-add_list для согласованности */
+    background-color: #fff;
+    bottom: 64px;
+    height: 70%;
+    box-shadow: 0px -4px 30px 0px rgba(0, 0, 0, 0.2);
+    left: 0;
+    border-radius: 4px 4px 0 0;
+    z-index: 9999;
+    padding: 24px 16px;
+    right: 0;
+}
     .footer-menu_link--active {
         border-bottom: 2px solid var(--blue-color);
     }
@@ -1237,6 +1257,7 @@ b {
 .footer-add_list-link--fw {
     font-weight: 700;
 }
+
 }
 @media(max-width:500px) {
     .main {
@@ -1602,8 +1623,10 @@ b {
 #lottie-animation svg {
    
 }
-.colorEdit {
-    fill: #0050FF;
+
+.colorEdit path{
+    stroke: #0050FF;
+    
 }
 @keyframes spin {
   0% {
@@ -2197,6 +2220,35 @@ b {
 /* ______/news_ITEM______ */
 
 
+
+.comics_index-all {
+    display: flex;
+    gap: 36px;
+    margin-top: 38px;
+    margin-bottom: 130px;
+}
+.comics_index-item {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 250px;
+    width: 100%;
+}
+.comics_index-img {
+}
+.comics_index-title {
+    font-size: 26px;
+    color: #161617;
+    font-weight: 500;
+    font-family: 'DIN Pro';
+}
+.comics_index-link {
+    font-size: 18px;
+    color: #0050FF;
+    font-weight: 500;
+    font-family: 'DIN Pro';
+}
+
 @media(max-width:1800px) {
     .news-all-item-imgOne {
         width: 33%;
@@ -2641,7 +2693,20 @@ b {
 .newsItem_fon-fixed-texts-text {
     font-size: 14px;
 }
-
+.footerMenuLinkBl--active {
+        color: #232730!important;
+        font-weight: 700;
+    }
+    .color {
+        padding: 5px 15px 5px 15px;
+    height: 30px;
+    }
+.footerMenuLinkBl--active .color {
+    background: #0050FF05;
+    border-radius: 15px;
+    padding: 5px 15px 5px 15px;
+    height: 30px;
+}
 }
 @media(max-width:450px) {
     .news_index {
